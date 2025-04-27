@@ -1,0 +1,588 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+			crossorigin="anonymous"
+		></script>
+		<!-- Option 1: Include in HTML -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+		/>
+		<title>Bootstrap Training</title>
+	</head>
+	<body class="position-relative bg-dark">
+		<nav
+			class="navbar navbar-expand-md bg-dark navbar-dark text-light p-3 fixed-top"
+		>
+			<div class="container">
+				<a href="#" class="navbar-brand text-light"> Wilson Ezeibekwe </a>
+
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navmenu"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navmenu">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item w-md-100 text-center">
+							<a class="nav-link" href="#learn">What you'll learn</a>
+						</li>
+						<li class="nav-item w-md-100 text-center">
+							<a class="nav-link" href="#questions">Questions</a>
+						</li>
+						<li class="nav-item w-md-100 text-center">
+							<a class="nav-link" href="#instructors">Instructors</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<section class="text-light text-center text-md-start">
+			<div class="container py-3">
+				<div class="d-md-flex align-items-center justify-content-between">
+					<div class="px-md-5">
+						<h1>Become a<span class="text-warning"> Web Developer</span></h1>
+						<p class="lead py-2">
+							Go from absolute beginner to becoming a paid professionals.
+							Working on real life projects.
+						</p>
+						<button
+							class="btn btn-primary btn-lg"
+							data-bs-toggle="modal"
+							data-bs-target="#exampleModal"
+						>
+							Register Now!
+						</button>
+					</div>
+					<div class="d-none d-md-block rounded-circle image">
+						<img
+							src="./image/wilson_portrait.jpg"
+							alt="image"
+							class="img img-fluid bg-primary rounded-circle w-100 h-100 object-fit-contain p-1 mx-2"
+						/>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="exampleModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<p class="lead">Fill out this form and we'll get back to you</p>
+						<div class="mb-3">
+							<label for="firstName" class="form-label"
+								>First Name</label
+							>
+							<input
+								type="text"
+								class="form-control"
+								id="firstName"
+								placeholder="First Name"
+							/>
+						</div>
+						<div class="mb-3">
+							<label for="lastName" class="form-label"
+								>Last Name</label
+							>
+							<input
+								type="text"
+								class="form-control"
+								id="lastName"
+								placeholder="Last Name"
+							/>
+						</div>
+						<div class="mb-3">
+							<label for="Email" class="form-label"
+								>Email</label
+							>
+							<input
+								type="email"
+								class="form-control"
+								id="Email"
+								placeholder="Example@gmail.com"
+							/>
+						</div>
+						<div class="mb-3">
+							<label for="phone" class="form-label"
+								>Phone</label
+							>
+							<input
+								type="tel"
+								class="form-control"
+								id="phone"
+								placeholder="080XXXXXXXX"
+							/>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button
+							type="button"
+							class="btn btn-secondary"
+							data-bs-dismiss="modal"
+						>
+							Close
+						</button>
+						<button type="button" class="btn btn-primary">Save changes</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- News letter section -->
+		<section class="bg-primary text-light p-4">
+			<div class="container">
+				<div
+					class="d-md-flex justify-content-between align-content-center gap-3"
+				>
+					<h2 class="text-center text-md-start">sign-up for our Newsletter</h2>
+					<div class="input-group news-letter">
+						<input type="text" class="form-control" placeholder="Enter Email" />
+						<button
+							class="btn btn-dark btn-lg"
+							type="button"
+							id="button-addon2"
+						>
+							Send
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- FLEX BOXES -->
+		<section class="py-5 bg-light">
+			<div class="container">
+				<div class="row text-center text-light gap-3 p-3 p-lg-0">
+					<div class="col-md bg-dark p-5 rounded my-2 w-md-100">
+						<div class="card-body">
+							<div class="h1 bi bi-laptop"></div>
+							<h3 class="card-tittle">Virtual</h3>
+							<div class="card-text">
+								<div class="card-text">
+									Flexible online learning, anytime, anywhere.
+								</div>
+							</div>
+							<a href="#" class="btn btn-primary mt-3">Read More</a>
+						</div>
+					</div>
+					<div class="col-md p-5 rounded bg-secondary my-2">
+						<div class="card-body">
+							<div class="h1 bi bi-briefcase"></div>
+							<h3 class="card-tittle">Project Base</h3>
+							<div class="card-text">
+								<div class="card-text">
+									Learn by building real-world projects.
+								</div>
+							</div>
+							<a href="#" class="btn btn-dark mt-3">Read More</a>
+						</div>
+					</div>
+					<div class="col-md bg-dark p-5 rounded my-2">
+						<div class="card-body">
+							<div class="h1 bi bi-award"></div>
+							<h3 class="card-tittle">Certificate</h3>
+							<div class="card-text">
+								<div class="card-text">
+									<div class="card-text">
+										Get certified and showcase your skills.
+									</div>
+								</div>
+							</div>
+							<a href="#" class="btn btn-primary mt-3">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Intro section -->
+		<section class="py-5 bg-light" id="learn">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-md">
+						<img src="./image/webDev.png" alt="image" class="img-fluid" />
+					</div>
+					<div class="col-md mt-5 mt-md-0 text-center text-md-start">
+						<h2>Go from zero to Hero</h2>
+						<p class="lead">
+							Transform your skills from beginner to advance with our
+							comprehensive course design for all levels
+						</p>
+						<p>
+							Whether you're just starting out or looking to deepen your
+							expertise, our tailored programs provide hands-on learning
+							experience to help you succeed. With guidance from industry
+							professionals, you'll build confidence ans master the skills you
+							need to thrive in your career
+						</p>
+						<a href="#" class="btn btn-light"
+							><i class="bi bi-chevron-right"></i> Read more</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Learn section -->
+		<section class="text-light py-5">
+			<div class="container">
+				<div
+					class="row align-items-center justify-content-between text-center text-md-start"
+				>
+					<div class="col-md">
+						<h2>Master ReactJS, NodeJS, ExpressJS, MongoDB, and Next.js</h2>
+						<p class="lead">
+							Become a full-stack developer with our comprehensive course on
+							ReactJS, NodeJS, ExpressJS, MongoDB, and Next.js.
+						</p>
+						<p>
+							Learn to build responsive front-end applications with ReactJS,
+							optimize your development with Nex.js
+						</p>
+						<a href="#" class="btn btn-light"
+							><i class="bi bi-chevron-right"></i> Read more</a
+						>
+					</div>
+					<div class="col-md mt-5 mt-md-0 text-center">
+						<img src="./image/react-logo.png" alt="image" class="img-fluid" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Accordion -->
+		<section class="py-5 bg-light" id="questions">
+			<div class="container">
+				<h2 class="text-center my-5">Frequently asked Questions</h2>
+				<div class="accordion accordion-flush" id="accordionFlushExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseOne"
+							>
+								What is the duration of this course?
+							</button>
+						</h2>
+						<div
+							id="flush-collapseOne"
+							class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								The course is design to be completed over a span of
+								<code>7 months,</code>
+								with a commitment of approximately 5-7 hours per wek. Each week
+								includes video lectures, reading materials, and assignments that
+								help reinforce the concepts learned. While the course is
+								self-paced, we encourage participant to stay on track with the
+								weekly schedule to maximize their learning experience.
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseTwo"
+							>
+								What will i be able to build ?
+							</button>
+						</h2>
+						<div
+							id="flush-collapseTwo"
+							class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								By the end of the course, you'll have the skills to build
+								several web applications. Examples include a "personal portfolio
+								website" that showcase your projects and skills, a "dynamic
+								e-commerce platform" with user authentication and payment
+								integration, and a "real-time chat application" using
+								webSockets. Additionally, you will learn to create a "task
+								management tool" similar to Trello, using ReactJS for the
+								front-end, NodeJS and ExpressJS for the backend,and MongoDB as
+								the database.You may also build small applications that
+								integrate with third-party APIs, such as "weather dashboard"
+								that fetches real time data from a weather API. The final
+								Project will be a comprehensive application that incorporates
+								all these skills, serving as capstone to demonstrate your
+								proficiency and creativity, providing you with a portfolio piece
+								to show potential employers or clients
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseThree"
+							>
+								Is there certificate after the training?
+							</button>
+						</h2>
+						<div
+							id="flush-collapseThree"
+							class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								Yes upon successfully completing the course and all of its
+								assessments, you will receive a certificate of completion. This
+								certificate is a great way to showcase your newly acquired
+								skills on your resume, Linkedin profile, or personal website.
+								its is important to note that the certificate is not an official
+								accreditation, but serve as a recognition for your hard work and
+								dedication in completing the course.
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFour"
+							>
+								What prerequisites do i need for this course?
+							</button>
+						</h2>
+						<div
+							id="flush-collapseFour"
+							class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								This course is designed for beginners, so no prior programming
+								experience is required. However, a basic understanding of how to
+								use a computer and navigate the internet is helpful. we lso
+								recommend having a good grasp of problem-solving skills and
+								logical thinking. All necessary software tools and resources
+								will be provided, and you will be guided step-by-step through
+								the setup and use of each one.
+							</div>
+						</div>
+					</div>
+
+					<div class="accordion-item">
+						<h2 class="accordion-header">
+							<button
+								class="accordion-button collapsed"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#flush-collapseFive"
+							>
+								What kind of support will i receive during the course?
+							</button>
+						</h2>
+						<div
+							id="flush-collapseFive"
+							class="accordion-collapse collapse"
+							data-bs-parent="#accordionFlushExample"
+						>
+							<div class="accordion-body">
+								Throughout the course, you will have access to a range of
+								support options. These include a dedicated course forum where
+								you can ask questions and get help from instructors and fellow
+								students, weekly live Q&A sessions with the course instructor,
+								and 24/7 access to all materials. if you encounter any technical
+								issues or have questions about the course content , our support
+								team is available to assist you via email or chat.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- INSTRUCTORS SECTIONS -->
+
+		<section class="py-5 bg-primary" id="instructors">
+			<div class="container text-light text-center">
+				<h2 class="text-center">Our Instructors</h2>
+				<p class="lead">
+					Our instructors are 5 stars rated instructors with over 5+ years
+					working as a dedicated web developers in the industry
+				</p>
+				<div class="row g-4">
+					<div class="col-md-6 col-lg-3">
+						<div class="card text-dark bg-light">
+							<div class="card-body">
+								<div class="img m-auto mb-2">
+									<img
+										src="./image/user.jpeg"
+										alt=""
+										class="card-image img-fluid rounded-circle w-100 h-100 m-auto"
+									/>
+								</div>
+								<h3 class="card-tittle mb-2">David Ov Onos</h3>
+								<p class="card-text">
+									David is a seasoned full-stack developer and mentor,
+									specializing in building scalable web applications and
+									teaching the MERN stack
+								</p>
+								<a href="#" class="bi bi-twitter text-dark mx-1"></a>
+								<a href="#" class="bi bi-facebook text-dark mx-1"></a>
+								<a href="#" class="bi bi-linkedin text-dark mx-1"></a>
+								<a href="#" class="bi bi-instagram text-dark mx-1"></a>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-lg-3">
+						<div class="card text-dark bg-light">
+							<div class="card-body">
+								<div class="img m-auto mb-2">
+									<img
+										src="./image/user2.jpeg"
+										alt=""
+										class="card-image rounded-circle w-100 h-100 m-auto"
+									/>
+								</div>
+								<h3 class="card-tittle mb-2">Helen Paul</h3>
+								<p class="card-text">
+									An expert in user experience design. Helen has over 10 years
+									of experience working with top global brands.
+								</p>
+								<a href="#" class="bi bi-twitter text-dark mx-1"></a>
+								<a href="#" class="bi bi-facebook text-dark mx-1"></a>
+								<a href="#" class="bi bi-linkedin text-dark mx-1"></a>
+								<a href="#" class="bi bi-instagram text-dark mx-1"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<div class="card text-dark bg-light">
+							<div class="card-body">
+								<div class="img m-auto mb-2">
+									<img
+										src="./image/user3.jpeg"
+										alt=""
+										class="card-image img-fluid rounded-circle w-100 h-100 m-auto"
+									/>
+								</div>
+								<h3 class="card-tittle mb-2">Mark Philip</h3>
+								<p class="card-text">
+									A full-stack developer with a passion for teaching. Mark
+									specialization in javascript frameworks and backend systems.
+								</p>
+								<a href="#" class="bi bi-twitter text-dark mx-1"></a>
+								<a href="#" class="bi bi-facebook text-dark mx-1"></a>
+								<a href="#" class="bi bi-linkedin text-dark mx-1"></a>
+								<a href="#" class="bi bi-instagram text-dark mx-1"></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-3">
+						<div class="card text-dark bg-light">
+							<div class="card-body">
+								<div class="img m-auto mb-2">
+									<img
+										src="./image/user4.jpeg"
+										alt=""
+										class="card-image img-fluid rounded-circle w-100 h-100 m-auto"
+									/>
+								</div>
+								<h3 class="card-tittle mb3">James Brown</h3>
+								<p class="card-text">
+									James is a data scientist with extensive with extensive
+									knowledge in machine learning, AI, and big dat technologies.
+								</p>
+								<a href="#" class="bi bi-twitter text-dark mx-1"></a>
+								<a href="#" class="bi bi-facebook text-dark mx-1"></a>
+								<a href="#" class="bi bi-linkedin text-dark mx-1"></a>
+								<a href="#" class="bi bi-instagram text-dark mx-1"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Contact Info -->
+		<section class="py-5 bg-light">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-md">
+						<h2 class="text-center">Contact Info</h2>
+						<ul class="list-group list-group-flush lead">
+							<li class="list-group-item">
+								<span class="fw-bold">Main location:</span> Cross River, Calabar
+							</li>
+							<li class="list-group-item">
+								<span class="fw-bold">Enrollment Phone:</span>
+								enrollment@gmail.com
+							</li>
+							<li class="list-group-item">
+								<span class="fw-bold">Student Phone:</span> 08037XXXXXXX
+							</li>
+							<li class="list-group-item">
+								<span class="fw-bold">Student Email:</span>
+								mantra467@gmail.com
+							</li>
+						</ul>
+					</div>
+					<div class="col-md text-center">
+						<img src="./image/contact.png" alt="" class="img-fluid" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer section -->
+		<section class="py-5 text-light">
+			<div class="container text-center position-relative">
+				<p class="lead">Copyright &copy; 2025 Fullstack Bootcamp</p>
+				<a href="#" class="position-absolute end-0 bottom-0 top-0 m-auto"
+					><i class="bi bi-arrow-up-circle h1"></i
+				></a>
+			</div>
+		</section>
+	</body>
+</html>
